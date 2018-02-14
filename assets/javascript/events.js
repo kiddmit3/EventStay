@@ -14,6 +14,11 @@ var lon;
 var newList;
 var checkArray = [];
 
+var pickedCover = "assets/images/" + Math.floor((Math.random()*6)+1) + ".jpg";
+
+$('#coverImg').attr("src",pickedCover);
+
+
 
 // *Calling ajax for events
 // ==========================
@@ -55,7 +60,7 @@ function findEvent(events) {
       lat = object.venue.location.lat;
       lon = object.venue.location.lon;
       var eventName = object.title;
-      var tickets = $("<a>").attr("href", object.url).text("Buy Tickets");
+      var tickets = $("<a>").attr("class", "tickets").attr("href", object.url).html("<i class='fas fa-ticket-alt fa-5x'></i><p>SeatGeek Tickets");
       tickets.attr("target", "_blank");
       var eventDate = moment(object.datetime_utc).format("MM/DD/YYYY");
       var eventCity = object.venue.display_location;
@@ -78,7 +83,7 @@ function findEvent(events) {
       $(col1).append(eventName + "<br/>" + eventCity + "<br/>" + eventDate + "<br/>");
 
       // let users know to click here for a list of hotels
-      var hotelList = $("<p>").attr("class", "hotel-font").text("Click here for a list of local hotels");
+      var hotelList = $("<p>").attr("class", "hotel-font").html("<i class='fas fa-h-square'></i> Click here for a list of local hotels from HotWire");
 
       // append to col1      
       $(col1).append(hotelList);
@@ -117,7 +122,7 @@ function findArtist(artist) {
 
   // Clear previous band name and band image
   $("#band-name").empty();
-  $("#band-image").attr("src", "assets/images/concert2.jpg");
+  $("#band-image").attr("src", "assets/images/noimage.jpg");
 
   var queryURL1 = "https://api.seatgeek.com/2/performers?slug=" + artist + clientId;
 
@@ -145,15 +150,12 @@ function findArtist(artist) {
    
     // Attr band image
     if (bandImage === null) { // If no band image is found, use the stock image
-    	$("#band-image").attr("src", "assets/images/concert2.jpg");
+    	$("#band-image").attr("src", "assets/images/noimage.jpg");
     } else {
         $("#band-image").attr("src", bandImage);
     }
   });
 };
-
-
-
 
 
 
@@ -207,7 +209,7 @@ $(document).on("click", ".result", function() {
 
   var hotelRooms = ["assets/images/room1.jpg", "assets/images/room2.jpg", "assets/images/room3.jpg", "assets/images/room4.jpg", "assets/images/room5.jpg"]
 
-  var queryURL = "https://hotwire.herokuapp.com/v1/deal/hotel?format=json&apikey=8bya58qw23u2q33c7cmwb34d&limit=10&dest==" + lat + "," + lon + "&distance=*~30&starrating=4~*&sort=price&sortorder=asc";
+  var queryURL = "https://hotwire.herokuapp.com/v1/deal/hotel?format=json&apikey=yh4ypdrga68t9ansnt795c2j&limit=10&dest==" + lat + "," + lon + "&distance=*~30&starrating=4~*&sort=price&sortorder=asc";
 
   // var queryURL = "http://api.hotwire.com/v1/deal/hotel?apikey=8bya58qw23u2q33c7cmwb34d&format=json&limit=5&dest=="+lat+","+lon+"&distance=*~30&starrating=4~*&sort=price&sortorder=asc";
 
@@ -252,7 +254,7 @@ $(document).on("click", ".result", function() {
 
 
           var hotelArea = $("<span>");
-          $(hotelArea).addClass("col s6");
+          $(hotelArea).addClass("col s10");
           $(hotelArea).attr("id", "hotelinfo")
           hotelArea.append("<b>" + Neighborhood + "</b><br/>");
           hotelArea.append(city + ", " + state);
@@ -294,9 +296,6 @@ $(document).on("click", ".result", function() {
     console.log("Stop double-clicking");
   }
 });
-
-
-
 
 
 // $(document).on('click','.result',function(){});

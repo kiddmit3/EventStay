@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>EventStay</title>
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- Metrialize Compiled and minified CSS -->
@@ -15,13 +14,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Link to Moment.js -->
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Link to Icons -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
 </head>
 
 <body>
+
+  <nav>
+    <div class="nav-wrapper grey darken-1">
+      <a href="https://kiddmit3.github.io/" class="brand-logo"><i class="fab fa-github"></i></a>
+    </div>
+  </nav>
+
   <!--parallax image-->
   <div class="parallax-container">
     <div class="parallax">
-      <img id="parallax1" src="assets/images/concert2.jpg">
+      <img class="responsive-img" id="coverImg" src="">
     </div>
   </div>
   <!--page header-->
@@ -55,7 +65,7 @@
           <!-- band name and image first list item (add ID)-->
           <li class="card-panel clearfix">
             <!-- band js populated image (add ID)-->
-            <img class="responsive-img col m4 s12" id="band-image" src="assets/images/concert2.jpg" alt="">
+            <img class="responsive-img col m4 s12" id="band-image" src="assets/images/noimage.jpg" alt="">
             <!--band js populated name and link to website (add ID)-->
             <div class="col m8 s12">
               <center><span class="black-text" id="band-name">
@@ -76,27 +86,17 @@
   </div>
   <!-- container closing -->
   <!-- footer with contributors info -->
-  <footer class="page-footer teal">
+  <footer class="page-footer grey darken-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text" id="footName">EventStay</h5>
-          <p class="grey-text text-lighten-4">More From the Contributors on GitHub</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">GitHub</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/njulius89" target="_blank">Nanette Julius</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/kiddmit3" target="_blank">David Lac</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/michaelpacheco89" target="_blank">Michael Pacheco</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/thkropp1" target="_blank">Teresa Kropp</a></li>
-          </ul>
+          <h5 class="white-text logo">EventStay</h5>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2017 Copyright EventStay
+        © 2018 Copyright EventStay
       </div>
     </div>
   </footer>

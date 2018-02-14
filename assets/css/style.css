@@ -1,18 +1,22 @@
 #userSearch {
   padding: 0 20%;
-  bottom: 100px;
+  bottom: 180px;
 }
 
 header {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Permanent Marker', cursive;
   font-size: 620%;
-  text-shadow: 4px 4px 4px #aaa;
   position: relative;
   bottom: 430px;
+  color: white;
+}
+
+.tickets {
+  color: #26A69A;
 }
 
 .hotel-font {
-  color: #1E90FF;
+  color: #5D5D5D;
 }
 
 .card-panel {
@@ -21,7 +25,7 @@ header {
 }
 
 .parallax-container {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 
@@ -29,7 +33,9 @@ header {
   overflow: auto;
 }
 
-
+.center-align {
+  margin: 80px auto;
+}
 /*styling for sticky footer*/
 
 body {
@@ -42,8 +48,12 @@ body {
   flex: 1 0 auto;
 }
 
-#footName {
-  font-family: 'Bungee Shade', cursive;
+.logo {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.brand-logo {
+  margin-left: 1%;
 }
 
 
@@ -67,12 +77,12 @@ body {
 }
 
 #band-name {
-  font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 760%;
 }
 
 #no-event {
-  font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: red;
   font-size: 300%;
 }
@@ -96,4 +106,8 @@ body {
   header {
     font-size: 350%;
   }
+}
+
+.parallax img { 
+  width: 100%;
 }
