@@ -1,113 +1,117 @@
 #userSearch {
-  padding: 0 20%;
-  bottom: 180px;
+    padding: 0 20%;
+    bottom: 180px;
 }
 
 header {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 620%;
-  position: relative;
-  bottom: 430px;
-  color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 700%;
+    position: relative;
+    bottom: 460px;
+    color: white;
 }
 
 .tickets {
-  color: #26A69A;
+    color: #26A69A;
 }
 
 .hotel-font {
-  color: #5D5D5D;
+    color: #5D5D5D;
 }
 
 .card-panel {
-  @extend .green,
-  .lighten-4;
+    @extend .green,
+    .lighten-4;
 }
-
-.parallax-container {
-  margin-top: 0px;
-}
-
 
 .clearfix {
-  overflow: auto;
+    overflow: auto;
 }
 
 .center-align {
-  margin: 80px auto;
+    margin: 80px auto;
 }
+
+.fa-ticket-alt {
+  width: 100%;
+}
+
 /*styling for sticky footer*/
 
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 .logo {
-  font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .brand-logo {
-  margin-left: 1%;
+    margin-left: 1%;
 }
+
+
 
 
 /*hotel styling*/
 
 #hotelinfo {
-  margin: 0px 10px;
+    margin: 0px 10px;
 }
 
 #hotelPic {
-  width: 100%;
+    width: 100%;
 }
 
 #hotelPrices {
-  width: 35%;
+    width: 35%;
 }
 
 .collapsible-body,
 .collapsible-header {
-  color: black;
+    color: black;
 }
 
 #band-name {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 760%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 760%;
 }
 
 #no-event {
-  font-family: 'Quicksand', sans-serif;
-  color: red;
-  font-size: 300%;
+    font-family: 'Quicksand', sans-serif;
+    color: red;
+    font-size: 300%;
 }
 
-@media only screen and (max-width: 700px) {
-
-
-  header {
-    font-size: 500%;
-    padding: 0 10%;
-  }
+#coverImg {
+    width: 100%;
 }
 
-@media only screen and (max-width: 699px) {
-  header {
-    font-size: 400%
-  }
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        font-size: 400%;
+        position: relative;
+        bottom: 360px;
+    }
+
+    .parallax-container {
+        position: relative;
+        margin-top: 0px;
+        height: 400px;
+
+    }
+
+    #coverImg {
+    width: 150%;
 }
 
-@media only screen and (max-width: 520px) {
-  header {
-    font-size: 350%;
-  }
 }
 
-.parallax img { 
-  width: 100%;
-}

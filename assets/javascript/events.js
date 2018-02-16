@@ -65,8 +65,6 @@ function findEvent(events) {
       var eventDate = moment(object.datetime_utc).format("MM/DD/YYYY");
       var eventCity = object.venue.display_location;
 
-
-
       // Generating new div 
       newList = $("<li>");
       var newEvent = $("<div>");
@@ -90,7 +88,7 @@ function findEvent(events) {
 
       // making second col for ticket url
       var col2 = $("<span>");
-      $(col2).addClass("col s2");
+      $(col2).addClass("col s4");
 
       // append to col2
       col2.append(tickets);
@@ -141,6 +139,7 @@ function findArtist(artist) {
 
     var bandImage = response.performers[0].image;
     console.log("Band Image: " + bandImage);
+    console.log(response.performers[0]);
 
     // *Construct HTML
     // ================
@@ -254,7 +253,7 @@ $(document).on("click", ".result", function() {
 
 
           var hotelArea = $("<span>");
-          $(hotelArea).addClass("col s10");
+          $(hotelArea).addClass("col s8");
           $(hotelArea).attr("id", "hotelinfo")
           hotelArea.append("<b>" + Neighborhood + "</b><br/>");
           hotelArea.append(city + ", " + state);
