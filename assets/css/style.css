@@ -1,6 +1,6 @@
 #userSearch {
     padding: 0 20%;
-    bottom: 180px;
+    bottom: 300px;
 }
 
 header {
@@ -105,13 +105,16 @@ body {
     .parallax-container {
         position: relative;
         margin-top: 0px;
-        height: 400px;
+        height: 360px;
 
     }
 
     #coverImg {
     width: 150%;
-}
+	}
+
+    }
+
 
 }
 
