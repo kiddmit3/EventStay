@@ -1,6 +1,6 @@
 #userSearch {
     padding: 0 20%;
-    bottom: 300px;
+    bottom: 280px;
 }
 
 header {
@@ -113,8 +113,12 @@ body {
     width: 150%;
 	}
 
-    }
-
-
+	#band-name {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
+    margin: auto;
 }
+}
+
+
 
