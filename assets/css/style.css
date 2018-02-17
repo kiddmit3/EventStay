@@ -7,7 +7,7 @@ header {
     font-family: 'Permanent Marker', cursive;
     font-size: 700%;
     position: relative;
-    bottom: 480px;
+    bottom: 390px;
     color: white;
 }
 
@@ -99,7 +99,7 @@ body {
     header {
         font-size: 400%;
         position: relative;
-        bottom: 400px;
+        bottom: 340px;
     }
 
     .parallax-container {
