@@ -12,7 +12,6 @@ A SPA (single page application) that is completely frontend, allowing users to s
 ![Screenshot](https://raw.githubusercontent.com/kiddmit3/EventStay/master/assets/images/readme/results.PNG)
 
 3. Upon selection, view the lowest prices for 4 star rated hotels to stay at near that event (Hotwire.com)
-
 ![Screenshot](https://raw.githubusercontent.com/kiddmit3/EventStay/master/assets/images/readme/hotels.PNG)
 
 
