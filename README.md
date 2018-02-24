@@ -16,7 +16,6 @@ A SPA (single page application) that is completely frontend, allowing users to s
 
 
 Mobile responsive:
-
 ![Screenshot](https://raw.githubusercontent.com/kiddmit3/EventStay/master/assets/images/readme/iphonexmock.png)
 ![Screenshot](https://raw.githubusercontent.com/kiddmit3/EventStay/master/assets/images/readme/iphone8plusmock.PNG) 
 
