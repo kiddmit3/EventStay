@@ -1,23 +1,39 @@
+
 # EventStay
 
-This site can be viewed live on  [Github](http://nanettejulius.com/EventStay/).
+A SPA (single page application) that is completely frontend, allowing users to search an artist for events and for hotels near those particular events. Uses API calls to Seatgeek and Hotwire.com APIs. Stores most recent search in local storage.
 
-**_EventStay is a completely front end app using API calls with Firebase_**
+## Demo
 
-
-### 1. EventStay allows users to find a place to stay after searching for an event.
-
-
-![Screenshot](https://user-images.githubusercontent.com/28736699/31202683-68633158-a918-11e7-84b1-1a8d0ee38628.png)
+1. Search an artist or band by typing into the input field
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/plasticBoulders/master/public/img/ReadMe/usersignup.PNG)\
 
 
-### 2. The user can buy available tickets to the event through SeatGeek...
+2. View artist events (Seatgeek)
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/plasticBoulders/master/public/img/ReadMe/create.PNG)\
+
+3. Upon selection, view the lowest prices for 4 star rated hotels to stay at near that event (Hotwire.com)
+
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/plasticBoulders/master/public/img/ReadMe/individual%20climb.PNG)\
 
 
-![Screenshot](https://user-images.githubusercontent.com/28736699/31202684-689557dc-a918-11e7-97b5-4f9fc5467cf3.png)
+Mobile responsive:
+ 
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/plasticBoulders/master/public/img/ReadMe/Capture2.PNG) 
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/plasticBoulders/master/public/img/ReadMe/Capture3.PNG)
+![Screenshot](https://raw.githubusercontent.com/kiddmit3/plasticBoulders/master/public/img/ReadMe/Capture.PNG)
 
 
-### 3. As well as see the lowest prices for hotels to stay near that event through Hotwire.
+## Built With
+
+* [HTML]
+* [CSS]
+* [Materialize](https://github.com/Dogfalo/materialize)
+* [jQuery](https://github.com/jquery/jquery)
 
 
-![Screenshot](https://user-images.githubusercontent.com/28736699/31202682-684ac0dc-a918-11e7-895f-94b348af96b7.png)
+## Authors
+
+* **David Lac** - [kiddmit3](https://github.com/kiddmit3)
+
+&copy; 2018 EventStay

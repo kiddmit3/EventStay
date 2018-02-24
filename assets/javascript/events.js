@@ -17,7 +17,7 @@ var checkArray = [];
 var pickedCover = "assets/images/" + Math.floor((Math.random()*6)+1) + ".jpg";
 
 $('#coverImg').attr("src",pickedCover);
-
+$('#searchText').select();
 
 
 // *Calling ajax for events
