@@ -14,12 +14,10 @@ A SPA (single page application) that is completely frontend, allowing users to s
 3. Upon selection, view the lowest prices for 4 star rated hotels to stay at near that event (Hotwire.com)
 ![Screenshot](https://raw.githubusercontent.com/kiddmit3/EventStay/master/assets/images/readme/hotels.PNG)
 
-Mobile responsive:
+## Mobile responsive
 
 ![Screenshot](https://raw.githubusercontent.com/kiddmit3/EventStay/master/assets/images/readme/iphonexmock.png)
 ![Screenshot](https://raw.githubusercontent.com/kiddmit3/EventStay/master/assets/images/readme/iphone8plusmock.PNG) 
-
-
 
 ## Built With
 
