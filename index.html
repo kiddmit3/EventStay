@@ -1,2 +1,76 @@
-<!DOCTYPE html><html lang=en><meta charset=UTF-8><title>EventStay</title><link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand"rel=stylesheet><link href=assets/css/materialize.min.css rel=stylesheet><link href=assets/css/style.css rel=stylesheet><script src=assets/javascript/jquery-3.3.1.min.js></script><script src=assets/javascript/moment.min.js></script><script src=assets/javascript/fontawesome-all.min.js defer></script><meta content="width=device-width,initial-scale=1"name=viewport><meta content=#616161 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=yes name=apple-mobile-web-app-capable><meta content=black-translucent name=apple-mobile-web-app-status-bar-style><link href=./favicon.ico rel="shortcut icon"type=image/x-icon><nav><div class="container darken-1 grey nav-wrapper"><a class=brand-logo href=https://github.com/kiddmit3><i class="fa-github fab"></i></a></div></nav><div class=parallax-container><div class=parallax><img id=coverImg src=""></div></div><div class="section white"><div class="container row"><div class="col s12"><header class=center-align>EventStay</header></div></div></div><div class="container main"><div class=row><div class="col s12"><div class="clearfix input-field"id=userSearch><form id=search><input class=validate id=searchText placeholder="Search for an artist or band for events and nearby hotels"> <label for=searchText></label><br><button class="btn waves-effect waves-light z-depth-4"id=submit-search onclick='Materialize.showStaggeredList("#eventResults")'type=submit>Search</button></form></div></div></div><div class=row><div class="col s12"><a name=id3><ul class="collapsible popout"data-collapsible=accordion id=eventResults><li class="clearfix card-panel"><img id=band-image src=""alt=""class="col s12 m5 responsive-img"><div class="col s12 m7"><span id=band-name class="responsive-img black-text">Artist or Band </span><span id=no-event></span></div></div><div class="clearfix collapsible-body"id=Hoevents></div></div></div>
-<footer class="page-footer grey darken-2"><div class="container"><div class="row"><div class="col l6 s12"><h5 class="white-text logo">EventStay</h5></div></div></div><div class="footer-copyright"><div class="container">© 2018 Copyright EventStay</div></div></footer><script src=assets/javascript/materialize.min.js></script><script>$("#searchText").val(localStorage.getItem("event")),console.log("Event from localStorage(previous search): "+localStorage.getItem("event")),$("#submit-search").on("click",function(e){var o=$("#searchText").val().trim();console.log("Event: "+o),localStorage.setItem("event",o),console.log("Event from localStorage: "+localStorage.getItem("event"))}),$(document).keyup(function(e){46==e.keyCode&&$("#searchText").val("")})</script><script>$(document).ready(function(){$(".parallax").parallax(),$(".collapsible").collapsible()});var options=[{selector:"#eventResults",offset:400,callback:function(l){Materialize.showStaggeredList($(l))}}];function scrollToAnchor(l){var o=$("a[name='"+l+"']");$("html,body").animate({scrollTop:o.offset().top},"slow")}Materialize.scrollFire(options),$("#submit-search").click(function(){scrollToAnchor("id3")})</script><script src=assets/javascript/events.js></script>
+<!DOCTYPE html>
+<html lang=en>
+<meta charset=UTF-8>
+<title>EventStay</title>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand" rel=stylesheet>
+<link href=assets/css/materialize.min.css rel=stylesheet>
+<link href=assets/css/style.css rel=stylesheet>
+<script async src=assets/javascript/moment.min.js></script>
+<script async src=assets/javascript/fontawesome-all.min.js defer></script>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<meta content=#616161 name=theme-color>
+<meta content=yes name=mobile-web-app-capable>
+<meta content=yes name=apple-mobile-web-app-capable>
+<meta content=black-translucent name=apple-mobile-web-app-status-bar-style>
+<link href=./favicon.ico rel="shortcut icon" type=image/x-icon>
+<nav>
+    <div class="container darken-1 grey nav-wrapper"><a class=brand-logo href=https://github.com/kiddmit3><i class="fa-github fab"></i></a></div>
+</nav>
+<div class=parallax-container>
+    <div class=parallax><img id=coverImg src=""></div>
+</div>
+<div class="section white">
+    <div class="container row">
+        <div class="col s12">
+            <header class=center-align>EventStay</header>
+        </div>
+    </div>
+</div>
+<div class="container main">
+    <div class=row>
+        <div class="col s12">
+            <div class="clearfix input-field" id=userSearch>
+                <form id=search>
+                    <input class=validate id=searchText placeholder="Search for an artist or band for events and nearby hotels">
+                    <label for=searchText></label>
+                    <br>
+                    <button class="btn waves-effect waves-light z-depth-4" id=submit-search onclick='Materialize.showStaggeredList("#eventResults")' type=submit>Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class=row>
+        <div class="col s12">
+            <a name=id3>
+                <ul class="collapsible popout" data-collapsible=accordion id=eventResults>
+                    <li class="clearfix card-panel"><img id=band-image src="" alt="" class="col s12 m5 responsive-img">
+                        <div class="col s12 m7"><span id=band-name class="responsive-img black-text">Artist or Band </span><span id=no-event></span></div>
+        </div>
+        <div class="clearfix collapsible-body" id=Hoevents></div>
+    </div>
+</div>
+<footer class="page-footer grey darken-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text logo">EventStay</h5></div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">© 2018 Copyright EventStay</div>
+    </div>
+</footer>
+<script src=assets/javascript/jquery-3.3.1.min.js></script>
+<script src=assets/javascript/materialize.min.js></script>
+<script async>
+$("#searchText").val(localStorage.getItem("event")), console.log("Event from localStorage(previous search): " + localStorage.getItem("event")), $("#submit-search").on("click", function(e) { var o = $("#searchText").val().trim();
+    console.log("Event: " + o), localStorage.setItem("event", o), console.log("Event from localStorage: " + localStorage.getItem("event")) }), $(document).keyup(function(e) { 46 == e.keyCode && $("#searchText").val("") })
+</script>
+<script async>
+$(document).ready(function() { $(".parallax").parallax(), $(".collapsible").collapsible() });
+var options = [{ selector: "#eventResults", offset: 400, callback: function(l) { Materialize.showStaggeredList($(l)) } }];
+
+function scrollToAnchor(l) { var o = $("a[name='" + l + "']");
+    $("html,body").animate({ scrollTop: o.offset().top }, "slow") } Materialize.scrollFire(options), $("#submit-search").click(function() { scrollToAnchor("id3") })
+</script>
+<script async src=assets/javascript/events.js></script>
