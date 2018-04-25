@@ -72,5 +72,10 @@ var options = [{ selector: "#eventResults", offset: 400, callback: function(l) {
 
 function scrollToAnchor(l) { var o = $("a[name='" + l + "']");
     $("html,body").animate({ scrollTop: o.offset().top }, "slow") } Materialize.scrollFire(options), $("#submit-search").click(function() { scrollToAnchor("id3") })
+
+//Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./assets/javascript/serviceworker.js');
+}
 </script>
 <script async src=assets/javascript/events.js></script>
