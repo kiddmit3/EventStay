@@ -1,4 +1,4 @@
-## EXPIRES CACHING ##
+
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType image/jpg "access 1 year"
@@ -11,7 +11,6 @@ ExpiresByType text/x-javascript "access 1 month"
 ExpiresByType image/x-icon "access 1 month"
 ExpiresDefault "access 1 month"
 </IfModule>
-## EXPIRES CACHING ##
 
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html
